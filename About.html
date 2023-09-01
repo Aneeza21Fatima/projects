@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <title>Sisters Farm And Kitchen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--for icons-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing:border-box;
+                font-family:calibri;
+            }
+             body, html {
+                width:100%;
+                height:100%;
+             }
+            nav{
+                width: 100%;
+                height: 80px;
+                background-color:#db7093;
+            }
+            label.logo{
+                color:white;
+                font-size:30px;
+                margin: 0 100px;
+                line-height:80px;
+            }
+            nav ul{
+                float:right;
+                list-style-type:none;
+            }
+            nav ul li{
+                display:inline-block;
+                line-height:80px;
+            }
+            nav ul li a{
+                text-decoration:none;
+                color:white;
+                font-size:25px;
+                text-transform:capitalize;
+                padding:8px 20px;
+            }
+            nav ul li a.active, a:hover{
+                background-color:black;
+            }
+
+            #btn{
+                float: right;
+                line-height:80px;
+                margin-right:5px;
+                font-size:30px;
+                color: black;
+                margin-top:24px;
+                display:none;
+            }
+            #checkbox_toggle{
+                display:none;
+            }
+            #checkbox_toggle:checked ~ ul{
+                left:0;
+            }
+            @media(max-width:995px){
+                label.logo{
+                    margin:0 40px;
+                    font-size:30px;
+                }
+                #btn{
+                    display:block;
+                }
+                nav ul{
+                    width:100%;
+                    height:100vh;
+                    background-color:grey;
+                    position:fixed;
+                    top:80px;
+                    left:-100%;
+                }
+                nav ul li{
+                    display:block;
+                    text-align:center;
+                    line-height:40px;
+                    margin:10px;
+                }
+            }
+            @media(max-width:460px){
+                label.logo{
+                    font-size:28px;
+                    margin:0 50px;
+                }
+                .pbox p{
+                    font-size:18px;
+                    padding:8px;
+                }
+            }
+            .responsive{
+                width:100%;
+                height:auto;
+            }
+            .footer{
+                background-color:grey;
+                width:100%;
+                height:auto;
+                display:flex; 
+                justify-content:space-evenly;
+                align-items:flex-start;
+                flex-wrap:wrap;
+                
+            }
+            .f{
+                height:180px;
+                width:200px;
+                display:inline-block;
+                text-decoration:none; 
+                text-transform:capitalize; 
+                font-size:22px;
+                margin-top:30px;
+            }
+            .b3{
+                height:250px;
+                width:300px;
+            }
+            .b1{
+                width:250px;
+            }
+            .b3{
+                height:140px;
+            }
+            .f h3{
+                font-size:24px;
+            }
+            .b2 ul{
+                list-style-type:none;
+            }
+            h1{
+                text-align:center;
+            }
+            .pbox{
+                border:2px solid black; 
+                width:auto;
+                height:auto;
+                overflow:auto;
+                font-size:22px;
+                padding:14px;
+             }
+             .anna{
+                display:flex;
+                align-items:flex-start;
+                flex-wrap:wrap;
+                margin:30px;
+                justify-content:center;
+             }
+             .a1{
+                height:330px;
+                width:330px;
+                align:center;
+
+             }
+             .a2{
+                height:330px;
+                width:330px;
+                align:center;
+                
+             }
+             img{
+                height:250px;
+                width:250px;
+                display:inline-block;
+                border-radius:50%;
+             }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="checkbox_toggle" name="" value="">
+            <label for="checkbox_toggle" id="btn"><i class="fa fa-bars"></i></label>
+            <label class="logo">Sisters Farm And Kitchen</label>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://youtube.com/@SistersFarmkitchen">YouTube</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        
+        <div class="anna">
+            <div class="anna a1">
+                <img src="anna.jpeg" class="image im1">
+                <h2>Aneez Fatima</h2>
+            </div>
+            <div class="anna a2">
+                <img src="anne.jpeg" class="image im2">
+                <h2>Aneeza Fatima</h2>
+            </div>
+        </div>
+        <div class="pbox">
+            <h1>About Us </h1><br><br>
+            <p>Hello there! We're Anee and Anna, and we're delighted to meet you. We're the faces 
+                behind our YouTube channel, where we share our passion for simple, healthy Indian 
+                recipes and the natural lifestyle we embrace on our farmhouse nestled in the dense
+                forests of Odisha, India.
+            </p><br>
+            <p>
+                Our journey into organic and natural farming was inspired by our beloved grandparents, 
+                Mr. Godfrey and Ms. Bernadine Francis, who instilled in us a deep love for sustainable
+                living. Despite our bustling lives in the heart of Mumbai, we frequently escape to our 
+                serene farmhouse to bask in the lush greenery and inner peace it offers.
+            </p><br>
+            <p>
+                In addition to our YouTube adventures, we're also dedicated students, always striving to 
+                expand our knowledge. We want to express our gratitude and love to all of you who follow
+                our channel. Please stay connected with us as we continue to explore and share our journey
+                of natural living. Thank you for being a part of our world! 💚
+            </p><br><br>
+        </div>
+
+        <footer> 
+            <div class="footer">
+                <div class="f b1">
+                    <h3>About</h3>
+                    <p>"Sisters Farm and Kitchen" is a YouTube channel focusing on 
+                    homemade cooking and farmhouse living.</p>
+                </div> 
+                <div class="f b2">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                            <a href="#">Home</a>
+                        </li>
+                        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                            <a href="#">About</a>
+                        </li>
+                        <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                            <a href="#">Recipes</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                <div class="f service">
+                    <h3>Services</h3>
+                </div> -->
+                <div class="f b3">
+                    <address>
+                        <div>
+                            <p><span><b><ion-icon name="location-outline"></ion-icon></b></span>Mumbai, India</p>
+                        </div>
+                        <div>
+                            <p><span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:aneeza4126@gmail.com">aneeza4126@gmail.com</a></p>
+                        </div>
+                        <div>
+                            <p><span><ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+917304849382">+91 7304849382 </a></p>
+                        </div>
+                    </address>
+                </div>
+                <div class="f b4"> <h3>Follow us On</h3>
+                    <a href="https://instagram.com/sistersfarmkitchen_?igshid=MzRlODBiNWFlZA==" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/aneeza.fatima.5891?mibextid=ZbWKwL" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://youtube.com/@SistersFarmkitchen" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
