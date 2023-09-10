@@ -123,7 +123,7 @@
             .box{
                 width:350px;
                 height:230px;
-                border:3px solid black;
+                border:1px solid black;
                 display:inline-block;
                 background-color:#db7093;
                 margin:15px;
@@ -176,8 +176,56 @@
             .insta{
                 size:200px;
             }
+            .sform{
+                border:solid 1px black;
+                width:vw;
+                height:200px;
+                display:block;
+            }
+            .fbox{
+            padding: 10px;
+            border-radius: 1rem;
+            width:60%;
+            border-radius:2px;
+            border: 1px solid black;
+            margin-left:20%;
             
-
+            }
+        .one{
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .two{
+            font-size:22px;
+        }
+        .emailcontainer{
+            background-color:lightyellow;
+            /* border: 1px solid red; */
+            border-radius: .5rem;
+            padding: 1rem;
+            width: 98%;
+        }
+        .emailcontainer button{
+            padding: 8px 30px;
+            background-color: red;
+            border: none;
+            color: white;
+            margin-top: 8px;
+            font-size: 20px;
+        }
+        input{
+            width: 100%;
+            background-color: transparent;
+            outline: none;
+            border: 1px solid brown;
+            height: 2rem;
+            border-radius: .5rem;
+            margin-top: 10px;
+            color: white;
+            padding: 0 10px 0 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
         </style>
     </head>
     <body>
@@ -190,7 +238,6 @@
                 <li><a href="recipe.html">Recipes</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="https://youtube.com/@SistersFarmkitchen">YouTube</a></li>
-                <li><a href="#">Subscribe</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
         </nav>
@@ -236,6 +283,16 @@
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+        </div>
+        <div class="fbox">
+            <p><span class="one">To receive an update on my latest posts through Email,</span><span class="two"> you can subscribe here</span></p>
+            <div class="emailcontainer">
+                <h4>Email sign up to recieve awesome Aneeza's Recipes in your inbox*</h4>
+                <input type="email" name="email" id="email" autocomplete="off" autofocus><br>
+                <button>Subscribe!</button>
+            </div>
+            <br><br><br><br>
+            <h3>Thanks for reading Aneeza's Recipes!</h3>
         </div>
         <footer> 
             <div class="footer">
